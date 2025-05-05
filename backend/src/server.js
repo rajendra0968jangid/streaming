@@ -14,10 +14,10 @@ const app = express();
 const PORT = process.env.PORT;
 
 const __dirname = path.resolve();
-
+let Url = process.env.URL
 app.use(
   cors({
-    origin: 'http://localhost:5173',
+    origin: Url,
     credentials: true, // all
   }),
 );
